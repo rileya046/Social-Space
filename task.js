@@ -1,10 +1,9 @@
-const inputTask = document.getElementById("taskText");
-const addTask = document.getElementById("add-task");
-var todoTask = document.getElementById("todoTask");
+var inputTask = document.getElementById("taskText");
+var addTask = document.getElementById("add-task");
 
 
 function addTaskFunct() {
-    const task = inputTask.value;
+    var task = inputTask.value;
     inputTask.value = "";
 
     if (task == ""){
@@ -12,7 +11,8 @@ function addTaskFunct() {
         return;
     }
 
-    var tempList = document.createElement("li");
+    var todoTask = document.getElementById("todoTask");
+    var tempList = document.createElement("ul");
 
     todoTask.appendChild(tempList);
 

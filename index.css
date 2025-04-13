@@ -10,7 +10,7 @@
 
 /* Define your color scheme here, taken from Fullyhacks color scheme. */
 :root {
-  --body_bg: #2c2142;
+  --body_bg: #332142;
   --sky_100: #abe1ff;
   --sky_300: #18aaff;
   --blue_300: #385ddf;
@@ -94,7 +94,7 @@ html {
 
 #title {
   text-align: center;
-  color: rgb(211, 178, 255);
+  color: rgb(255, 178, 250);
 }
 
 #description {
@@ -120,7 +120,7 @@ html {
   justify-content: center;
   align-items: center;
   font-size: 30px;
-  color:greenyellow;
+  color:rgb(47, 255, 224);
 }
 
 .completed {
