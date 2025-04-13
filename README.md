@@ -3,14 +3,26 @@
 
 # About Our 2025 Hackathon Project
 
-The goal was to make a fun motivation get plans from the group chat to a real social space through a simple interactive mission. 
+The goal was to make a fun motivation get plans from the group chat to a real social space through a simple interactive space mission.
 
-## Details
-- Has 3 different progress points available for travel with the goal of reaching the planet (Your Event)
+# The Setting
+You are working in ground control - Your Mission? Get the ship from your home star of "Group Chat" to the illusive "Event" Planet! 
+
+Choose the three most important tasks to make your mission a success and input them to your computer as "tasks". Each successfully completed task will dim once checked off, so it is easy to tell what is left to complete. Every setback will send your ship back, and each success will send it forward.
+
+Can you make your plans leave your group and make it to somewhere beyond the stars?
+
+## Hackathon Project Details
+- Three task progress points (represented through stars) with the goal of reaching the planet (Your Event)
+- A rocket ship that travels between stars to represent task progress
+- Completion message that resets the "mission"
+- Small Interactive Elements in the Space Setting (spinning stars and spaceship idle animation when hovering over the object)
+- floating Tuffy the Titan animation in space for a more immersive feel
+- An old-fashioned computer screen design for the tasks
+- custom assets for design originality
 
 ## Template - "FullyPack-HTML-CSS"
-
-## 📝 References
-- [HTML Tutorial](https://www.w3schools.com/html/)
-- [CSS Tutorial](https://www.w3schools.com/css/)
-- [ACMDev HTML/CSS Workshop](https://github.com/acmCSUFDev/intro-to-web-dev/tree/part-1)
+## Team Collaboration
+- Assets: @giselletlax
+- Full-Stack Development: @rileya046 and @angietqn
+- Presentation and Hackathon Submission: @tlimbeek and @angietqn
