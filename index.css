@@ -71,8 +71,8 @@ html {
 .ship {
   position:absolute;
   top:250px; /* Adjust - up or down*/
-  left:25%; /* adjust - left right*/
-  width: 100px;
+  left:5%; /* adjust - left right*/
+  width: 25px;
   z-index:2;
   transform: translate3d(0,0,0);
   rotate: 50deg;
@@ -85,7 +85,9 @@ html {
   top:50px; /* Adjust - up(decrease) or down(increase)*/
   left:5%; /* adjust - left(decrease) right(increase)*/
   z-index:2;
-  transition: all 1.4s ease;
+  transform: translate3d(0,0,0);
+  transition: all 1s ease;
+  animation: floating 10s infinite;
 }
 
 .star1 {
@@ -112,10 +114,6 @@ html {
 
 .star2:hover {
   transform: rotate(-100deg);
-}
-
-.tuffy:hover {
-  transform: rotate(360deg);
 }
 
 .ship:hover {
@@ -167,5 +165,25 @@ html {
   }
   75%{
     transform: translate3d(2px,0px,0px)
+  }
+}
+
+/*floating animation*/
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0px)
+    rotate(0deg)
+  }
+  25%{
+    transform: translate3d(2px,10px,0px)
+    rotate(15deg)
+  }
+  50%{
+    transform: translate3d(5px,15px,0px)
+    rotate(50deg)
+  }
+  75%{
+    transform: translate3d(2px,10px,0px)
+    rotate(25deg)
   }
 }
