@@ -28,7 +28,7 @@
 }
 
 html {
-  background: radial-gradient(circle, #661b60,#271b51);
+  background: radial-gradient(circle, #85217c,#201646);
   font-family: "Bruno Ace SC", sans-serif;
 }
 
@@ -39,22 +39,6 @@ html {
   flex-direction: column;
 }
 
-.nav {
-  background-color: var(--purple_300);
-  padding: 2rem;
-  width: 100%;
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  font-size: 1.5rem;
-}
-
-.navlink { 
-    text-decoration: none;
-    color: black;
-    list-style: none;
-}
-
 .taskClass {
   display: flex;
   justify-content: center;
@@ -62,22 +46,6 @@ html {
   padding-top: 10px;
   padding-bottom: 10px;
   background: rgb(98, 114, 112);
-
-}
-
-.title {
-  color: var(--sky_300);
-  margin-top: 2rem;
-  font-size: 2rem;
-}
-
-.pictureCaption {
-  margin-top: 1rem;
-}
-
-.fullypic {
-  margin-top: 2rem;
-  object-fit: cover;
 }
 
 #blank-color{
@@ -96,7 +64,7 @@ html {
 
 #title {
   text-align: center;
-  color: #e791ce;
+  color: #ffb0e9;
 }
 
 #description {
@@ -111,8 +79,8 @@ html {
   width: 10%;
   height: auto;
   display: block;
-  margin-left: -50px;
-  margin-bottom: -50px;
+  margin-left: -30px;
+  margin-bottom: -30px;
   margin-top:-30px;
 }
 
