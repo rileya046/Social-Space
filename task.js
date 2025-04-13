@@ -48,6 +48,22 @@ function toggleElement() {
     }
 }
 
+//for mission accomplished
+//function finishToggle() {
+//    const image = document.getElementById("success");
+
+//    const tasks = todoTask.querySelectorAll("ul")
+
+//    const totalTasks = tasks.length;
+//    const done = Array.from(tasks).filter(completed => completed.checked).length;
+
+//    if (totalTasks === 3 && done === 3)  {
+//        image.style.display = "block";
+//    } else {
+//        image.style.display = "none";
+//    }
+//}
+
 function shipPosition() {
     const tasks = document.querySelectorAll('#todoTask input[type="checkbox"]');
     const done = Array.from(tasks).filter(completed => completed.checked).length;
@@ -70,12 +86,14 @@ function shipPosition() {
     // 🎉 When all 3 tasks are completed
     const totalTasks = tasks.length;
     if (totalTasks === 3 && done === 3) {
+        //finishToggle();
         setTimeout(() => {
             const restart = confirm("Mission accomplished! 🚀 Restart and clear tasks?");
             if (restart) {
                 // Clear all tasks
                 document.getElementById("todoTask").innerHTML = "";
                 toggleElement();
+                document.getElementById("success").style.display = "none";
 
                 // Reset rocket to start
                 ship.style.left = positions[0].left;
