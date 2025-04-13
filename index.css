@@ -1,6 +1,9 @@
 /* Add your font via Google Font */
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
 
+/* Add your font via Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
 /* CSS Reset. You don't need to understand these.
  * They're only here to make CSS consistent across all browsers. */
 @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
@@ -26,7 +29,7 @@
 
 html {
   background-color: var(--body_bg);
-  font-family: "Rubik";
+  font-family: "Bruno Ace SC", sans-serif;
 }
 
 .container {
@@ -52,6 +55,14 @@ html {
     list-style: none;
 }
 
+.task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+
+}
+
 .title {
   color: var(--sky_300);
   margin-top: 2rem;
@@ -74,6 +85,13 @@ html {
   background-color: #1e1333;
 }
 
+#blank-color-2{
+  width: 100%; height: 20px;
+  border-style: solid;
+  border-color: #1e1333;
+  background-color: #1e1333;
+}
+
 #title {
   text-align: center;
   color: rgb(211, 178, 255);
@@ -88,4 +106,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 15px;
+  padding: 20px;
 }
+
