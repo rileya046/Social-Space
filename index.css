@@ -70,17 +70,19 @@ html {
 
 .ship {
   position:absolute;
-  top:50%; /* Adjust - up or down*/
+  top:250px; /* Adjust - up or down*/
   left:25%; /* adjust - left right*/
   width: 100px;
   z-index:2;
-  transition:left 1s ease, top 1s ease;
+  transform: translate3d(0,0,0);
+  rotate: 50deg;
+  transition: left 1s ease, top 1s ease;
 }
 
 .tuffy {
   position:absolute;
   opacity: .5;
-  top:5%; /* Adjust - up(decrease) or down(increase)*/
+  top:50px; /* Adjust - up(decrease) or down(increase)*/
   left:5%; /* adjust - left(decrease) right(increase)*/
   z-index:2;
   transition: all 1.4s ease;
@@ -116,6 +118,10 @@ html {
   transform: rotate(360deg);
 }
 
+.ship:hover {
+  animation: idle 0.5s infinite;
+}
+
 /*the task screen*/
 .todoTask {
   display: flex;
@@ -146,4 +152,20 @@ html {
 #add-task:hover {
   cursor: pointer;
   box-shadow: 0 0 30px rgb(107, 255, 211);
+}
+
+/*bounce animation*/
+@keyframes idle {
+  0%, 100% {
+    transform: translateY(0px)
+  }
+  25%{
+    transform: translate3d(2px,0px,0px)
+  }
+  50%{
+    transform: translate3d(4px,5px,0px)
+  }
+  75%{
+    transform: translate3d(2px,0px,0px)
+  }
 }
