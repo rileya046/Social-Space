@@ -28,7 +28,7 @@
 }
 
 html {
-  background-color: var(--body_bg);
+  background: radial-gradient(circle, #661b60,#271b51);
   font-family: "Bruno Ace SC", sans-serif;
 }
 
@@ -60,6 +60,8 @@ html {
   justify-content: center;
   align-items: center;
   padding-top: 10px;
+  padding-bottom: 10px;
+  background: rgb(98, 114, 112);
 
 }
 
@@ -81,15 +83,15 @@ html {
 #blank-color{
   width: 100%; height: 10px;
   border-style: solid;
-  border-color: #431535;
-  background-color: #431535;
+  border-color: #1b1623;
+  background-color: #1b1623;
 }
 
 #blank-color-2{
   width: 100%; height: 20px;
   border-style: solid;
-  border-color: #431535;
-  background-color:#431535;
+  border-color: #1b1623;
+  background-color: #1b1623;
 }
 
 #title {
@@ -116,14 +118,15 @@ html {
 
 .todoTask {
   display: flex;
-  padding-top: 10px;
   justify-content: center;
   align-items: center;
   font-size: 30px;
-  color:#c8feff;
+  color:rgb(107, 255, 211);
+  flex-direction: column;
+  background: linear-gradient(to bottom, rgb(20, 47, 39), rgb(29, 69, 57), rgb(20, 47, 39));
 }
 
 .completed {
   text-decoration: line-through;
-  color: #888;
+  color: rgb(17, 32, 27);
 }
