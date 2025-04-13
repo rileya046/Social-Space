@@ -18,7 +18,7 @@ addTask.addEventListener("click", () => {
 todoTask.addEventListener("click", (event) => {
     if (event.target.classList.contains("complete")) {
         const newTask = event.target.parentElement;
-        taskItem.style.backgroundColor =rgb(197, 197, 197);
+        newTask.style.backgroundColor =rgb(193, 124, 13);
         event.target.disabled = true;
     }
 })
