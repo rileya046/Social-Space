@@ -110,9 +110,9 @@ function shipPosition() {
                 document.getElementById("success").style.display = "none";
 
                 // Reset rocket to start
-                ship.style.left = positions[0].left;
-                ship.style.top = positions[0].top;
-                //finishToggle();
+                ship.style.left = "5%";
+                ship.style.top = "250px";
+                ship.style.transform = rotate("-20deg");
             }
         }, 500); // small delay to allow final rocket movement before alert
     }
