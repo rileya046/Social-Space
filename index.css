@@ -68,6 +68,7 @@ html {
   margin-top:-30px;
 }
 
+/*ship*/
 .ship {
   position:absolute;
   top:250px; /* Adjust - up or down*/
@@ -79,6 +80,7 @@ html {
   transition: left 1s ease, top 1s ease, transform 1s ease;
 }
 
+/*astronaut tuffy*/
 .tuffy {
   position:absolute;
   opacity: .5;
@@ -90,6 +92,7 @@ html {
   animation: floating 10s infinite;
 }
 
+/*top star*/
 .star1 {
   position:absolute;
   opacity: .5;
@@ -99,11 +102,21 @@ html {
   transition: all .5s ease;
 }
 
+/*bottom star*/
 .star2 {
   position:absolute;
   opacity: .25;
   top:400px; /* Adjust - up(decrease) or down(increase)*/
   left:80%; /* adjust - left(decrease) right(increase)*/
+  z-index:2;
+  transition: all 1s ease;
+}
+
+/*unidentified decal*/
+.decal {
+  position:absolute;
+  top:620px; /* Adjust - up(decrease) or down(increase)*/
+  left:92%; /* adjust - left(decrease) right(increase)*/
   z-index:2;
   transition: all 1s ease;
 }
