@@ -23,6 +23,7 @@ function addTaskFunct() {
 
     checkbox.addEventListener("change", function() {
         span.classList.toggle("completed");
+        shipPosition();
     });
 
     tempList.appendChild(checkbox);
@@ -44,5 +45,41 @@ function toggleElement() {
         bar.style.display = "block";
     } else {
         bar.style.display = "none";
+    }
+}
+
+function shipPosition() {
+    const tasks = document.querySelectorAll('#todoTask input[type="checkbox"]');
+    const done = Array.from(tasks).filter(completed => completed.checked).length;
+
+    const ship = document.getElementById("ship");
+
+    const positions = [
+        {left:"5%", top:"250px"}, // start
+        { left: "25%", top: "75px" }, // star 1
+        { left: "50%", top: "220px" }, // star 2
+        { left: "75%", top: "100px" }  // planet
+    ];
+
+    const pos = positions[Math.min(done, positions.length - 1)];
+
+    ship.style.left = pos.left;
+    ship.style.top = pos.top;
+
+    // 🎉 When all 3 tasks are completed
+    const totalTasks = tasks.length;
+    if (totalTasks === 3 && done === 3) {
+        setTimeout(() => {
+            const restart = confirm("Mission accomplished! 🚀 Restart and clear tasks?");
+            if (restart) {
+                // Clear all tasks
+                document.getElementById("todoTask").innerHTML = "";
+                toggleElement();
+
+                // Reset rocket to start
+                ship.style.left = positions[0].left;
+                ship.style.top = positions[0].top;
+            }
+        }, 500); // small delay to allow final rocket movement before alert
     }
 }
