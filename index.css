@@ -55,7 +55,7 @@ html {
     list-style: none;
 }
 
-.task {
+.taskClass {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,5 +108,12 @@ html {
   align-items: center;
   border-radius: 15px;
   padding: 20px;
+}
+
+.todoTask {
+  display: flex;
+  padding-top: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
