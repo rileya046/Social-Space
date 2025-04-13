@@ -8,7 +8,7 @@ addTask.addEventListener("click", () => {
     newTask.classList.add("task");
     newTask.innerHTML = `
     <p>${task}</p>
-    <button class="complete"></button>
+    <button class="complete">Done</button>
     `;
 
     todoTask.appendChild(newTask);
