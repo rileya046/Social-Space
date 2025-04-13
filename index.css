@@ -1,0 +1,68 @@
+/* Add your font via Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+
+/* CSS Reset. You don't need to understand these.
+ * They're only here to make CSS consistent across all browsers. */
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+/* Define your color scheme here, taken from Fullyhacks color scheme. */
+:root {
+  --body_bg: #fffaf1;
+  --sky_100: #abe1ff;
+  --sky_300: #18aaff;
+  --blue_300: #385ddf;
+  --purple_300: #9ea8ff;
+  --purple_hover: #3b3561;
+  --purple_500: #4f38df;
+  --pink_700: #b438df;
+  --pink_400: #ff8f8f;
+  --pink_300: #df389c;
+  --pink_100: #ffabce;
+  --orange_300: #ffc985;
+  --orange_100: #ffedcc;
+  --purple_main: #340b67;
+  --purple_main_hover: #b49fcc;
+}
+
+html {
+  background-color: var(--body_bg);
+  font-family: "Rubik";
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nav {
+  background-color: var(--purple_300);
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  font-size: 1.5rem;
+}
+
+.navlink { 
+    text-decoration: none;
+    color: black;
+    list-style: none;
+}
+
+.title {
+  color: var(--sky_300);
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.pictureCaption {
+  margin-top: 1rem;
+}
+
+.fullypic {
+  margin-top: 2rem;
+  object-fit: cover;
+}
