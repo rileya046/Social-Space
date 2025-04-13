@@ -55,16 +55,17 @@ function shipPosition() {
     const ship = document.getElementById("ship");
 
     const positions = [
-        {left:"5%", top:"250px"}, // start
-        { left: "25%", top: "75px" }, // star 1
-        { left: "50%", top: "220px" }, // star 2
-        { left: "75%", top: "100px" }  // planet
+        {left:"5%", top:"250px",rotate: "rotate(-20deg)"}, // start
+        { left: "30%", top: "50px", rotate: "rotate(45deg)"}, // star 1
+        { left: "53%", top: "230px", rotate: "rotate(100deg)"}, // star 2
+        { left: "75%", top: "100px", rotate: "rotate(-40deg)"}  // planet
     ];
 
     const pos = positions[Math.min(done, positions.length - 1)];
 
     ship.style.left = pos.left;
     ship.style.top = pos.top;
+    ship.style.transform = pos.rotate;
 
     // 🎉 When all 3 tasks are completed
     const totalTasks = tasks.length;

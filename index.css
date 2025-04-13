@@ -76,7 +76,7 @@ html {
   z-index:2;
   transform: translate3d(0,0,0);
   rotate: 50deg;
-  transition: left 1s ease, top 1s ease;
+  transition: left 1s ease, top 1s ease, transform 1s ease;
 }
 
 .tuffy {
