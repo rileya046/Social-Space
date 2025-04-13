@@ -83,14 +83,14 @@ html {
   top:5%; /* Adjust - up(decrease) or down(increase)*/
   left:5%; /* adjust - left(decrease) right(increase)*/
   z-index:2;
-  transition:left 1s ease, top 1s ease;
+  transition: all 1.4s ease;
 }
 
 .star1 {
   position:absolute;
   opacity: .5;
-  top:10%; /* Adjust - up(decrease) or down(increase)*/
-  left:90%; /* adjust - left(decrease) right(increase)*/
+  top:30px; /* Adjust - up(decrease) or down(increase)*/
+  left:1220px; /* adjust - left(decrease) right(increase)*/
   z-index:2;
   transition: all .5s ease;
 }
@@ -98,7 +98,7 @@ html {
 .star2 {
   position:absolute;
   opacity: .25;
-  top:60%; /* Adjust - up(decrease) or down(increase)*/
+  top:400px; /* Adjust - up(decrease) or down(increase)*/
   left:80%; /* adjust - left(decrease) right(increase)*/
   z-index:2;
   transition: all 1s ease;
@@ -110,6 +110,10 @@ html {
 
 .star2:hover {
   transform: rotate(-100deg);
+}
+
+.tuffy:hover {
+  transform: rotate(360deg);
 }
 
 /*the task screen*/
