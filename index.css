@@ -106,8 +106,9 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 15px;
-  padding: 20px;
+  transform: scale(0.4);
+  transform-origin: bottom;
+  margin: -10px;
 }
 
 .todoTask {
@@ -115,6 +116,8 @@ html {
   padding-top: 10px;
   justify-content: center;
   align-items: center;
+  font-size: 30px;
+  color:greenyellow;
 }
 
 .completed {
