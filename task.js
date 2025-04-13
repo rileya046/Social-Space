@@ -107,12 +107,12 @@ function shipPosition() {
                 // Clear all tasks
                 document.getElementById("todoTask").innerHTML = "";
                 toggleElement();
-                document.getElementById("success").style.display = "none";
+                //document.getElementById("success").style.display = "none";
 
                 // Reset rocket to start
                 ship.style.left = "5%";
                 ship.style.top = "250px";
-                ship.style.transform = rotate("-20deg");
+                ship.style.transform = "rotate(-20deg)"; 
             }
         }, 500); // small delay to allow final rocket movement before alert
     }
