@@ -1,4 +1,4 @@
-const inputTask = document.getElementById("task");
+const inputTask = document.getElementById("taskText");
 const addTask = document.getElementById("add-task");
 var todoTask = document.getElementById("todoTask");
 
@@ -18,6 +18,5 @@ addTask.addEventListener("click", () => {
     });
 
     todoTask.appendChild(newTask);
-    completeTaskListener(todoTask);
     inputTask.value = "";
 });
