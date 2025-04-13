@@ -10,7 +10,7 @@
 
 /* Define your color scheme here, taken from Fullyhacks color scheme. */
 :root {
-  --body_bg: #332142;
+  --body_bg: #661b60;
   --sky_100: #abe1ff;
   --sky_300: #18aaff;
   --blue_300: #385ddf;
@@ -81,20 +81,20 @@ html {
 #blank-color{
   width: 100%; height: 10px;
   border-style: solid;
-  border-color: #1e1333;
-  background-color: #1e1333;
+  border-color: #431535;
+  background-color: #431535;
 }
 
 #blank-color-2{
   width: 100%; height: 20px;
   border-style: solid;
-  border-color: #1e1333;
-  background-color: #1e1333;
+  border-color: #431535;
+  background-color:#431535;
 }
 
 #title {
   text-align: center;
-  color: rgb(255, 178, 250);
+  color: #e791ce;
 }
 
 #description {
@@ -120,7 +120,7 @@ html {
   justify-content: center;
   align-items: center;
   font-size: 30px;
-  color:rgb(47, 255, 224);
+  color:#c8feff;
 }
 
 .completed {
