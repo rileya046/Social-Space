@@ -14,3 +14,11 @@ addTask.addEventListener("click", () => {
     todoTask.appendChild(newTask);
     inputTask.value = "";
 });
+
+todoTask.addEventListener("click", (event) => {
+    if (event.target.classList.contains("complete")) {
+        const newTask = event.target.parentElement;
+        taskItem.style.backgroundColor =rgb(197, 197, 197);
+        event.target.disabled = true;
+    }
+})
