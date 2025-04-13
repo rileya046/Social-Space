@@ -1,11 +1,11 @@
 # Social Space
 ### "Helping To Get Your Social Plans Off the Launch Pad!"
 
-# About Our 2025 Hackathon Project
+## About Our 2025 Hackathon Project
 
 The goal was to make a website to get plans from the group chat to a real "Social Space" through a simple interactive space mission.
 
-# The Setting
+## The Setting
 You are working in ground control:
 Your Mission? Get this spaceship from your home star of "Group Chat" to the illusive "Event" Planet! 
 
