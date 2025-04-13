@@ -7,7 +7,7 @@ The goal was to make a website to get plans from the group chat to a real "Socia
 
 # The Setting
 You are working in ground control: Your Mission?
-    Get this spaceship from your home star of "Group Chat" to the illusive "Event" Planet! 
+- Get this spaceship from your home star of "Group Chat" to the illusive "Event" Planet! 
 
 Choose the three most important tasks to make your mission a success and input them to your computer as "tasks". Each successfully completed task will dim once checked off, so it is easy to tell what is left to complete. Every setback will send your ship back, and each success will send it forward.
 
