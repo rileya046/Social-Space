@@ -1,5 +1,6 @@
 const inputTask = document.getElementById("task");
 const addTask = document.getElementById("add-task");
+var todoTask = document.getElementById("todoTask");
 
 addTask.addEventListener("click", () => {
     const task = inputTask.value;
@@ -11,14 +12,12 @@ addTask.addEventListener("click", () => {
     <button class="complete">Done</button>
     `;
 
+    const complete = newTask.querySelector(".complete");
+    complete.addEventListener("click", () => {
+        newTask.remove();
+    });
+
     todoTask.appendChild(newTask);
+    completeTaskListener(todoTask);
     inputTask.value = "";
 });
-
-todoTask.addEventListener("click", (event) => {
-    if (event.target.classList.contains("complete")) {
-        const newTask = event.target.parentElement;
-        newTask.style.backgroundColor =rgb(193, 124, 13);
-        event.target.disabled = true;
-    }
-})
