@@ -3,7 +3,7 @@
 
 # About Our 2025 Hackathon Project
 
-### The goal was to make a fun motivation get plans from the group chat to a real social space through a simple interactive mission. 
+The goal was to make a fun motivation get plans from the group chat to a real social space through a simple interactive mission. 
 
 ## HTML? CSS? 🤔 
 - HTML (Hypertext Markup Language) is the standard markup language used to create web pages. It consists of a series of tags and attributes that are used to structure and format the content of a web page. HTML is used to define the different parts of a web page such as headings, paragraphs, images, links, and more.

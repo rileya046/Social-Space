@@ -8,25 +8,6 @@
  * They're only here to make CSS consistent across all browsers. */
 @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
 
-/* Define your color scheme here, taken from Fullyhacks color scheme. */
-:root {
-  --body_bg: #661b60;
-  --sky_100: #abe1ff;
-  --sky_300: #18aaff;
-  --blue_300: #385ddf;
-  --purple_300: #9ea8ff;
-  --purple_hover: #3b3561;
-  --purple_500: #4f38df;
-  --pink_700: #b438df;
-  --pink_400: #ff8f8f;
-  --pink_300: #df389c;
-  --pink_100: #ffabce;
-  --orange_300: #ffc985;
-  --orange_100: #ffedcc;
-  --purple_main: #340b67;
-  --purple_main_hover: #b49fcc;
-}
-
 html {
   background: radial-gradient(circle, #85217c,#201646);
   font-family: "Bruno Ace SC", sans-serif;
@@ -39,6 +20,7 @@ html {
   flex-direction: column;
 }
 
+/*the task addition bar*/
 .taskClass {
   display: flex;
   justify-content: center;
@@ -48,6 +30,7 @@ html {
   background: rgb(98, 114, 112);
 }
 
+/*top window frame*/
 #blank-color{
   width: 100%; height: 10px;
   border-style: solid;
@@ -55,6 +38,7 @@ html {
   background-color: #1b1623;
 }
 
+/*bottom window frame*/
 #blank-color-2{
   width: 100%; height: 20px;
   border-style: solid;
@@ -83,23 +67,34 @@ html {
   margin-top:-30px;
 }
 
+/*the task screen*/
 .todoTask {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 30px;
   color:rgb(107, 255, 211);
+  text-shadow: 0 0 50px rgba(226, 255, 246, 0.858);
   flex-direction: column;
   background: linear-gradient(to bottom, rgb(20, 47, 39), rgb(29, 69, 57), rgb(20, 47, 39));
 }
 
+/*when a task has been completed*/
 .completed {
   text-decoration: line-through;
   color: rgb(17, 32, 27);
+  text-shadow: 0 0 50px rgba(226, 255, 246, 0.13);
 }
 
+/*for when no tasks have been added*/
 #blank-color-3{
-  width: 100%; height: 80px;
+  width: 100%; height: 150px;
   border-style: solid;
   background: linear-gradient(to bottom, rgb(20, 47, 39), rgb(29, 69, 57), rgb(20, 47, 39));
+}
+
+/*button affect*/
+#add-task:hover {
+  cursor: pointer;
+  box-shadow: 0 0 30px rgb(107, 255, 211);
 }
