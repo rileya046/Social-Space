@@ -121,13 +121,14 @@ html {
   transition: all 1s ease;
 }
 
-/*success*/
-.success {
+/*success
+.successImg {
   position:absolute;
-  top:150px; /* Adjust - up or down*/
-  left:37%; /* adjust - left right*/
+  top:150px;
+  left:37%;
   width: 120px;
 }
+*/
 
 .star1:hover {
   transform: rotate(100deg);
